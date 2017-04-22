@@ -13,7 +13,7 @@ namespace Forms
     /// <summary>
     /// La clase abstracta Pantalla servirá de modelo para todas las pantalls de la aplicación.
     /// </summary>
-    public abstract partial class Pantalla : Form
+    public partial class Pantalla : Form
     {
         public void inicializar(int ancho, int alto)
         {
