@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ServicioMultas
 {
-    public class ServicioMultas : MarshalByRefObject
+    public class Servicio : MarshalByRefObject
     {
         private readonly ArrayList vehiculos;
         private readonly ArrayList conductores;
@@ -240,7 +240,7 @@ namespace ServicioMultas
         
         // Funciones públicas del servicio:
 
-        public ServicioMultas()
+        public Servicio()
         {
             vehiculos = new ArrayList();
             conductores = new ArrayList();
@@ -288,6 +288,8 @@ namespace ServicioMultas
 
         public int Identificacion(string pass)
         {
+            Console.WriteLine("En identificación.");
+
             if (pass.Equals("541293AGP", StringComparison.InvariantCultureIgnoreCase))
                 return 1;
 

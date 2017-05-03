@@ -1,4 +1,4 @@
-﻿namespace Forms
+﻿namespace ServicioMultas.Forms
 {
     partial class Pantalla
     {

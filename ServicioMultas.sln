@@ -6,8 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioMultas", "ServicioMultas\ServicioMultas.csproj", "{A903E971-C428-4F1B-8FD4-B9507EA83388}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServidorMultas", "ServidorMultas\ServidorMultas.csproj", "{E4C2C34F-4E77-415E-AA08-3F497FA3204D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A903E971-C428-4F1B-8FD4-B9507EA83388} = {A903E971-C428-4F1B-8FD4-B9507EA83388}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteMultas", "ClienteMultas\ClienteMultas.csproj", "{23C31702-AC43-40FA-A65F-027591745F03}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A903E971-C428-4F1B-8FD4-B9507EA83388} = {A903E971-C428-4F1B-8FD4-B9507EA83388}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

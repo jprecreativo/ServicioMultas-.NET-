@@ -1,12 +1,16 @@
 ﻿using ClienteMultas;
-using Forms;
+using ServicioMultas;
+using ServicioMultas.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting;
+using System.Runtime.Remoting.Channels;
+using System.Runtime.Remoting.Channels.Tcp;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ServicioMultas
+namespace ClienteMultas
 {
     static class ClienteMultas
     {
@@ -16,9 +20,27 @@ namespace ServicioMultas
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
+            // ChannelServices.RegisterChannel(new TcpChannel(), true);
+
+            try
+            {
+                RemotingConfiguration.Configure("ClienteMultas.exe.config", false);
+            }
+            
+            catch
+            {
+                Console.WriteLine("Problemas al leer configuración.");
+            }
+
+            Console.WriteLine("Antes de indentificarme");
+
+            Servicio servicioMultas = new Servicio();
+            Console.WriteLine("Antes de indentificarme");
+            Console.WriteLine(servicioMultas.Identificacion("541293AGP"));
+
+            /* Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PantallaInicial());
+            Application.Run(new PantallaInicial(servicioMultas)); */
         }
     }
 }

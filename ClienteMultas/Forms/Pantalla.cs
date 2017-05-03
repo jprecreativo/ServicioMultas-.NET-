@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Forms
+namespace ServicioMultas.Forms
 {
     /// <summary>
     /// La clase abstracta Pantalla servirá de modelo para todas las pantalls de la aplicación.
