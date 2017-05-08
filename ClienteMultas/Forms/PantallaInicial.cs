@@ -29,7 +29,7 @@ namespace ServicioMultas.Forms
         {
             if(rbIdentificacion.Checked)
             {
-                Console.WriteLine(servicioMultas.Identificacion("541293AGP"));
+                // Hacer que se vea la pantalla de indentificación.
             }
 
             else if(rbConsultarPuntos.Checked)

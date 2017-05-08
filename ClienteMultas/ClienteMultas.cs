@@ -38,9 +38,9 @@ namespace ClienteMultas
             Console.WriteLine("Antes de indentificarme");
             Console.WriteLine(servicioMultas.Identificacion("541293AGP"));
 
-            /* Application.EnableVisualStyles();
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PantallaInicial(servicioMultas)); */
+            Application.Run(new PantallaInicial(servicioMultas));
         }
     }
 }
