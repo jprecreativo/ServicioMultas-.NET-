@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClienteMultas.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,27 +21,23 @@ namespace ServicioMultas.Forms
         public PantallaInicial(Servicio servicioMultas)
         {
             this.InitializeComponent();
-            base.inicializar(500, 600);
+            base.inicializar();
             this.TopMost = true;
             this.servicioMultas = servicioMultas;
         }
 
         private void btAceptar_Click(object sender, EventArgs e)
         {
+            this.TopMost = false;
+
             if(rbIdentificacion.Checked)
-            {
-                // Hacer que se vea la pantalla de indentificación.
-            }
+                new PantallaIdentificacion(servicioMultas).Visible = true;
 
             else if(rbConsultarPuntos.Checked)
-            {
-
-            }
+                new PantallaConsultarPuntos(servicioMultas).Visible = true;
 
             else
-            {
-
-            }
+                new PantallaConsultarMultas(servicioMultas).Visible = true;
         }
     }
 }

@@ -55,13 +55,73 @@
       <DependentUpon>Pantalla.cs</DependentUpon>
     </Compile>
     <Compile Include="ClienteMultas.cs" />
+    <Compile Include="Forms\PantallaAltaVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaAltaVehiculo.Designer.cs">
+      <DependentUpon>PantallaAltaVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PantallaBajaVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaBajaVehiculo.Designer.cs">
+      <DependentUpon>PantallaBajaVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PantallaConsultarMultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaConsultarMultas.Designer.cs">
+      <DependentUpon>PantallaConsultarMultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PantallaConsultarPuntos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaConsultarPuntos.Designer.cs">
+      <DependentUpon>PantallaConsultarPuntos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PantallaGestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaGestion.Designer.cs">
+      <DependentUpon>PantallaGestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PantallaIdentificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaIdentificacion.Designer.cs">
+      <DependentUpon>PantallaIdentificacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PantallaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\PantallaInicial.Designer.cs">
       <DependentUpon>PantallaInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PantallaPonerMulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaPonerMulta.Designer.cs">
+      <DependentUpon>PantallaPonerMulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PantallaQuitarMulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PantallaQuitarMulta.Designer.cs">
+      <DependentUpon>PantallaQuitarMulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\PantallaConsultarMultas.resx">
+      <DependentUpon>PantallaConsultarMultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaConsultarPuntos.resx">
+      <DependentUpon>PantallaConsultarPuntos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaGestion.resx">
+      <DependentUpon>PantallaGestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaIdentificacion.resx">
+      <DependentUpon>PantallaIdentificacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PantallaInicial.resx">
       <DependentUpon>PantallaInicial.cs</DependentUpon>
     </EmbeddedResource>

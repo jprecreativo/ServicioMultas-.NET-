@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServicioMultas
 {
+    [Serializable]
     public class Multa
     {
         private string mat;

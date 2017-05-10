@@ -15,9 +15,15 @@ namespace ServicioMultas.Forms
     /// </summary>
     public partial class Pantalla : Form
     {
-        public void inicializar(int ancho, int alto)
+        public void inicializar()
         {
-            this.Size = new Size(ancho, alto);
+            /*
+             * Poner en este método el tamaño de la pantalla es innecesario, ya que
+             * en la pantalla "Propiedades" pondré manualmente el tamaño de cada una
+             * de las pantallas.
+             */
+
+            // this.Size = new Size(ancho, alto);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;

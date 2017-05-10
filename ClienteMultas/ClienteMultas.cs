@@ -32,12 +32,8 @@ namespace ClienteMultas
                 Console.WriteLine("Problemas al leer configuración.");
             }
 
-            // Console.WriteLine("Antes de indentificarme");
-
             Servicio servicioMultas = new Servicio();
-            // Console.WriteLine("Antes de indentificarme");
-            Console.WriteLine(servicioMultas.Identificacion("541293AGP"));
-
+         
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PantallaInicial(servicioMultas));
