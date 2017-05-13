@@ -33,6 +33,20 @@ namespace ClienteMultas
             }
 
             Servicio servicioMultas = new Servicio();
+
+            int DNI1 = 45134789, DNI2 = 45111786;
+            String mat1 = "7861-HJI", mat2 = "5661-LLK", mat3 = "0988-HKP";
+
+            // El servidor, al dar de alta a los vehículos, crea el mismo a los conductores:
+
+            servicioMultas.AltaVehiculo(DNI1, mat1);
+            servicioMultas.AltaVehiculo(DNI1, mat2);
+            servicioMultas.AltaVehiculo(DNI2, mat3);
+
+            // Pongo algunas multas:
+
+            servicioMultas.PonerMulta(mat2, "01/04/2017-13:00", 6);
+            servicioMultas.PonerMulta(mat3, "01/04/2017-13:00", 2);
          
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

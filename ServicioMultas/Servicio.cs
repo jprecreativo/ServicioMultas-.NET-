@@ -25,7 +25,7 @@ namespace ServicioMultas
             int pos = 0;
             bool existe = false;
 
-            while (!existe && pos < vehiculos.Capacity)
+            while (!existe && pos < vehiculos.Count)
             {
                 Vehiculo vehiculo = (Vehiculo) vehiculos[pos];
 
@@ -52,7 +52,7 @@ namespace ServicioMultas
             int pos = 0;
             bool propietario = false;
         
-            while (!propietario && pos < vehiculos.Capacity)
+            while (!propietario && pos < vehiculos.Count)
             {
                 Vehiculo vehiculo = (Vehiculo) vehiculos[pos];
 
@@ -83,7 +83,7 @@ namespace ServicioMultas
             int pos = 0;
             bool usuario = false;
 
-            while (!usuario && pos < conductores.Capacity)
+            while (!usuario && pos < conductores.Count)
             {
                 Conductor conductor = (Conductor) conductores[pos];
 
@@ -111,7 +111,7 @@ namespace ServicioMultas
             int pos = 0;
             bool encontrado = false;
 
-            while (!encontrado && pos < vehiculos.Capacity)
+            while (!encontrado && pos < vehiculos.Count)
             {
                 Vehiculo vehiculo = (Vehiculo) vehiculos[pos];
 
@@ -163,7 +163,7 @@ namespace ServicioMultas
             int pos = 0;
             bool encontrado = false;
 
-            while (!encontrado && pos < multas.Capacity)
+            while (!encontrado && pos < multas.Count)
             {
                 Multa multa = (Multa) multas[pos];
                 
@@ -222,7 +222,7 @@ namespace ServicioMultas
             int i = 0;
             bool encontrada = false;
 
-	        while(!encontrada && i < multas.Capacity)
+	        while(!encontrada && i < multas.Count)
             {
                 Multa multa = (Multa) multas[i];
 

@@ -23,5 +23,47 @@ namespace ClienteMultas.Forms
             this.TopMost = true;
             this.servicioMultas = servicioMultas;
         }
+
+        private void mostrarPuntos()
+        {
+            int dni;
+            String dniTexto = tbDNI.Text;
+            
+            if(Int32.TryParse(dniTexto, out dni))
+            {
+                int puntos;
+                String mat = tbMat.Text;
+
+                if((puntos = servicioMultas.ComprobarPuntos(dni, mat)) != -1)
+                {
+                    textoPuntos.ForeColor = Color.Black;
+                    textoPuntos.Text = "El conductor de DNI " + dni + " tiene " + puntos + " puntos.";
+                }
+
+                else
+                {
+                    textoPuntos.ForeColor = Color.Red;
+                    textoPuntos.Text = "Los datos especificados no son correctos.";
+                }
+            }
+
+            else
+            {
+                textoPuntos.ForeColor = Color.Red;
+                textoPuntos.Text = "Los datos especificados no son correctos.";
+            }
+
+            textoPuntos.Visible = true;
+        }
+
+        private void tbDNI_TextChanged(object sender, EventArgs e)
+        {
+            this.mostrarPuntos();
+        }
+
+        private void tbMat_TextChanged(object sender, EventArgs e)
+        {
+            this.mostrarPuntos();
+        }
     }
 }

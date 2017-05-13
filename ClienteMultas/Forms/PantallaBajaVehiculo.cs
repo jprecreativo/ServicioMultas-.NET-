@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ServicioMultas;
+using ServicioMultas.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +12,16 @@ using System.Windows.Forms;
 
 namespace ClienteMultas.Forms
 {
-    public partial class PantallaBajaVehiculo : Form
+    public partial class PantallaBajaVehiculo : Pantalla
     {
-        public PantallaBajaVehiculo()
+        private Servicio servicioMultas;
+
+        public PantallaBajaVehiculo(Servicio servicioMultas)
         {
             InitializeComponent();
+            base.inicializar();
+            this.TopMost = true;
+            this.servicioMultas = servicioMultas;
         }
     }
 }

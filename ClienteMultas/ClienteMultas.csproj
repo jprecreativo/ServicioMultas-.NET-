@@ -110,6 +110,12 @@
       <DependentUpon>PantallaQuitarMulta.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\PantallaAltaVehiculo.resx">
+      <DependentUpon>PantallaAltaVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaBajaVehiculo.resx">
+      <DependentUpon>PantallaBajaVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PantallaConsultarMultas.resx">
       <DependentUpon>PantallaConsultarMultas.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +130,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PantallaInicial.resx">
       <DependentUpon>PantallaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaPonerMulta.resx">
+      <DependentUpon>PantallaPonerMulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PantallaQuitarMulta.resx">
+      <DependentUpon>PantallaQuitarMulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
