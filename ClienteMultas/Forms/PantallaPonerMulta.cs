@@ -23,5 +23,24 @@ namespace ClienteMultas.Forms
             this.TopMost = true;
             this.servicioMultas = servicioMultas;
         }
+
+        private void btMultar_Click(object sender, EventArgs e)
+        {
+            int puntos = (int) spPuntos.Value;
+            String mat = tbMat.Text, fecha = DateTime.Now.ToString("dd/MM/yyyy-HH:mm");
+            int result = servicioMultas.PonerMulta(mat,fecha, puntos);
+
+            if(result == 1)
+            {
+                textoMulta.ForeColor = Color.Black;
+                textoMulta.Text = "La multa se ha puesto correctamente.";
+            }
+
+            else
+            {
+                textoMulta.ForeColor = Color.Red;
+                textoMulta.Text = "Los datos especificados no son correctos.";
+            }
+        }
     }
 }

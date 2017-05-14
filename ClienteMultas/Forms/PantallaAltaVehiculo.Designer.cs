@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textoPuntos = new System.Windows.Forms.Label();
+            this.textoAlta = new System.Windows.Forms.Label();
             this.tbMat = new System.Windows.Forms.TextBox();
             this.tbDNI = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -36,16 +36,15 @@
             this.btAlta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textoPuntos
+            // textoAlta
             // 
-            this.textoPuntos.Font = new System.Drawing.Font("Papyrus", 10F);
-            this.textoPuntos.ForeColor = System.Drawing.Color.Red;
-            this.textoPuntos.Location = new System.Drawing.Point(24, 93);
-            this.textoPuntos.Name = "textoPuntos";
-            this.textoPuntos.Size = new System.Drawing.Size(486, 25);
-            this.textoPuntos.TabIndex = 9;
-            this.textoPuntos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.textoPuntos.Visible = false;
+            this.textoAlta.Font = new System.Drawing.Font("Papyrus", 10F);
+            this.textoAlta.ForeColor = System.Drawing.Color.Red;
+            this.textoAlta.Location = new System.Drawing.Point(24, 93);
+            this.textoAlta.Name = "textoAlta";
+            this.textoAlta.Size = new System.Drawing.Size(486, 25);
+            this.textoAlta.TabIndex = 9;
+            this.textoAlta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tbMat
             // 
@@ -97,7 +96,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 161);
             this.Controls.Add(this.btAlta);
-            this.Controls.Add(this.textoPuntos);
+            this.Controls.Add(this.textoAlta);
             this.Controls.Add(this.tbMat);
             this.Controls.Add(this.tbDNI);
             this.Controls.Add(this.label2);
@@ -111,7 +110,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label textoPuntos;
+        private System.Windows.Forms.Label textoAlta;
         private System.Windows.Forms.TextBox tbMat;
         private System.Windows.Forms.TextBox tbDNI;
         private System.Windows.Forms.Label label2;

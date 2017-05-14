@@ -36,24 +36,22 @@ namespace ClienteMultas.Forms
 
                 if ((result = servicioMultas.AltaVehiculo(dni, mat)) == 1)
                 {
-                    textoPuntos.ForeColor = Color.Black;
-                    textoPuntos.Text = "El vehículo se ha dado del alta correctamente.";
+                    textoAlta.ForeColor = Color.Black;
+                    textoAlta.Text = "El vehículo se ha dado del alta correctamente.";
                 }
 
                 else
                 {
-                    textoPuntos.ForeColor = Color.Red;
-                    textoPuntos.Text = "Los datos especificados no son correctos o el vehículo ya está dado de alta.";
+                    textoAlta.ForeColor = Color.Red;
+                    textoAlta.Text = "Los datos especificados no son correctos o el vehículo ya está dado de alta.";
                 }
             }
 
             else
             {
-                textoPuntos.ForeColor = Color.Red;
-                textoPuntos.Text = "Los datos especificados no son correctos o el vehículo ya está dado de alta.";
+                textoAlta.ForeColor = Color.Red;
+                textoAlta.Text = "Los datos especificados no son correctos o el vehículo ya está dado de alta.";
             }
-
-            textoPuntos.Visible = true;
         }
     }
 }

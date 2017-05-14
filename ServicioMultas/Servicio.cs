@@ -346,7 +346,7 @@ namespace ServicioMultas
 
             if (pos != -1 && !this.tieneMulta(mat))
             {
-                vehiculos.Remove(pos);
+                vehiculos.Remove(vehiculos[pos]);
                 result = 1;
             }
 

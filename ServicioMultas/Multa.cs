@@ -20,7 +20,9 @@ namespace ServicioMultas
 
         public Multa(string mat, string fecha, int puntos)
         {
-
+            this.mat = mat;
+            this.fecha = fecha;
+            this.puntos = puntos;
         }
 
         public string Mat

@@ -80,7 +80,6 @@
             this.textoPuntos.Size = new System.Drawing.Size(355, 25);
             this.textoPuntos.TabIndex = 4;
             this.textoPuntos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.textoPuntos.Visible = false;
             // 
             // PantallaConsultarPuntos
             // 

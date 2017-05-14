@@ -52,8 +52,6 @@ namespace ClienteMultas.Forms
                 textoPuntos.ForeColor = Color.Red;
                 textoPuntos.Text = "Los datos especificados no son correctos.";
             }
-
-            textoPuntos.Visible = true;
         }
 
         private void tbDNI_TextChanged(object sender, EventArgs e)
