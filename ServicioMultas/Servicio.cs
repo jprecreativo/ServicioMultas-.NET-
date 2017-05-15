@@ -318,7 +318,7 @@ namespace ServicioMultas
             {
                 Multa multa = (Multa) multas[pos];
 
-                multas.Remove(pos);
+                multas.Remove(multas[pos]);
                 this.devolverPuntos(mat, multa.Puntos);
                 result = 1;
             }
