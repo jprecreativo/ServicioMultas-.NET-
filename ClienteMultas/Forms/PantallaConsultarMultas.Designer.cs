@@ -28,74 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tablaMultas = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btVerMultas = new System.Windows.Forms.Button();
+            this.vistaMultas = new System.Windows.Forms.DataGridView();
             this.numMulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.puntos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.tablaMultas)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbDNI = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbMat = new System.Windows.Forms.TextBox();
+            this.btVerMultas = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            ((System.ComponentModel.ISupportInitialize)(this.vistaMultas)).BeginInit();
             this.SuspendLayout();
             // 
-            // tablaMultas
+            // vistaMultas
             // 
-            this.tablaMultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tablaMultas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.vistaMultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vistaMultas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numMulta,
             this.mat,
             this.fecha,
             this.puntos});
-            this.tablaMultas.Location = new System.Drawing.Point(29, 91);
-            this.tablaMultas.Name = "tablaMultas";
-            this.tablaMultas.Size = new System.Drawing.Size(431, 338);
-            this.tablaMultas.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "DNI:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(71, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(94, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(180, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Matrícula:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(265, 35);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(98, 20);
-            this.textBox2.TabIndex = 4;
-            // 
-            // btVerMultas
-            // 
-            this.btVerMultas.Location = new System.Drawing.Point(382, 33);
-            this.btVerMultas.Name = "btVerMultas";
-            this.btVerMultas.Size = new System.Drawing.Size(78, 23);
-            this.btVerMultas.TabIndex = 5;
-            this.btVerMultas.Text = "Ver multas";
-            this.btVerMultas.UseVisualStyleBackColor = true;
+            this.vistaMultas.Location = new System.Drawing.Point(17, 94);
+            this.vistaMultas.Name = "vistaMultas";
+            this.vistaMultas.Size = new System.Drawing.Size(443, 338);
+            this.vistaMultas.TabIndex = 0;
             // 
             // numMulta
             // 
@@ -124,20 +82,64 @@
             this.puntos.Name = "puntos";
             this.puntos.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "DNI:";
+            // 
+            // tbDNI
+            // 
+            this.tbDNI.Location = new System.Drawing.Point(71, 35);
+            this.tbDNI.Name = "tbDNI";
+            this.tbDNI.Size = new System.Drawing.Size(94, 20);
+            this.tbDNI.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(180, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Matrícula:";
+            // 
+            // tbMat
+            // 
+            this.tbMat.Location = new System.Drawing.Point(265, 35);
+            this.tbMat.Name = "tbMat";
+            this.tbMat.Size = new System.Drawing.Size(98, 20);
+            this.tbMat.TabIndex = 4;
+            // 
+            // btVerMultas
+            // 
+            this.btVerMultas.Location = new System.Drawing.Point(382, 33);
+            this.btVerMultas.Name = "btVerMultas";
+            this.btVerMultas.Size = new System.Drawing.Size(78, 23);
+            this.btVerMultas.TabIndex = 5;
+            this.btVerMultas.Text = "Ver multas";
+            this.btVerMultas.UseVisualStyleBackColor = true;
+            this.btVerMultas.Click += new System.EventHandler(this.btVerMultas_Click);
+            // 
             // PantallaConsultarMultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(478, 457);
             this.Controls.Add(this.btVerMultas);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbMat);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbDNI);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tablaMultas);
+            this.Controls.Add(this.vistaMultas);
             this.Name = "PantallaConsultarMultas";
             this.Text = "PantallaConsultarMultas";
-            ((System.ComponentModel.ISupportInitialize)(this.tablaMultas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vistaMultas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,15 +147,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView tablaMultas;
+        private System.Windows.Forms.DataGridView vistaMultas;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbDNI;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbMat;
         private System.Windows.Forms.Button btVerMultas;
         private System.Windows.Forms.DataGridViewTextBoxColumn numMulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn mat;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn puntos;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
