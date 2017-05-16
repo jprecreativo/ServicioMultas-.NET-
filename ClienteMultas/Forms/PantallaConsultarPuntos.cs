@@ -27,9 +27,9 @@ namespace ClienteMultas.Forms
         private void mostrarPuntos()
         {
             int dni;
-            String dniTexto = tbDNI.Text;
-            
-            if(Int32.TryParse(dniTexto, out dni))
+            // String dniTexto = tbDNI.Text;
+
+            if (Int32.TryParse(tbDNI.Text, out dni))
             {
                 int puntos;
                 String mat = tbMat.Text;

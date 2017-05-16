@@ -32,6 +32,7 @@ namespace ClienteMultas.Forms
         private void btVerMultas_Click(object sender, EventArgs e)
         {
             int dni;
+            // String dniTexto = tbDNI.Text;
 
             if(Int32.TryParse(tbDNI.Text, out dni))
             {

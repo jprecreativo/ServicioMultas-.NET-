@@ -34,11 +34,10 @@
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.puntos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbDNI = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbMat = new System.Windows.Forms.TextBox();
             this.btVerMultas = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.tbDNI = new System.Windows.Forms.TextBox();
+            this.tbMat = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.vistaMultas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,13 +91,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "DNI:";
             // 
-            // tbDNI
-            // 
-            this.tbDNI.Location = new System.Drawing.Point(71, 35);
-            this.tbDNI.Name = "tbDNI";
-            this.tbDNI.Size = new System.Drawing.Size(94, 20);
-            this.tbDNI.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -108,13 +100,6 @@
             this.label2.Size = new System.Drawing.Size(79, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Matrícula:";
-            // 
-            // tbMat
-            // 
-            this.tbMat.Location = new System.Drawing.Point(265, 35);
-            this.tbMat.Name = "tbMat";
-            this.tbMat.Size = new System.Drawing.Size(98, 20);
-            this.tbMat.TabIndex = 4;
             // 
             // btVerMultas
             // 
@@ -126,15 +111,29 @@
             this.btVerMultas.UseVisualStyleBackColor = true;
             this.btVerMultas.Click += new System.EventHandler(this.btVerMultas_Click);
             // 
+            // tbDNI
+            // 
+            this.tbDNI.Location = new System.Drawing.Point(72, 35);
+            this.tbDNI.Name = "tbDNI";
+            this.tbDNI.Size = new System.Drawing.Size(91, 20);
+            this.tbDNI.TabIndex = 6;
+            // 
+            // tbMat
+            // 
+            this.tbMat.Location = new System.Drawing.Point(266, 35);
+            this.tbMat.Name = "tbMat";
+            this.tbMat.Size = new System.Drawing.Size(100, 20);
+            this.tbMat.TabIndex = 7;
+            // 
             // PantallaConsultarMultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 457);
-            this.Controls.Add(this.btVerMultas);
             this.Controls.Add(this.tbMat);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.tbDNI);
+            this.Controls.Add(this.btVerMultas);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.vistaMultas);
             this.Name = "PantallaConsultarMultas";
@@ -149,14 +148,13 @@
 
         private System.Windows.Forms.DataGridView vistaMultas;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbDNI;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbMat;
         private System.Windows.Forms.Button btVerMultas;
         private System.Windows.Forms.DataGridViewTextBoxColumn numMulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn mat;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn puntos;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.TextBox tbDNI;
+        private System.Windows.Forms.TextBox tbMat;
     }
 }
