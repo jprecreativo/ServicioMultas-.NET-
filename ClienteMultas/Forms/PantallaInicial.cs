@@ -37,7 +37,7 @@ namespace ServicioMultas.Forms
                 new PantallaConsultarPuntos(servicioMultas).Visible = true;
 
             else
-                new PantallaConsultarMultas(servicioMultas).Visible = true;
+                new PantallaConsultarMulta(servicioMultas).Visible = true;
         }
     }
 }

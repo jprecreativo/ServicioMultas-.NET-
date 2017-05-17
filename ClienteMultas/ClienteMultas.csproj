@@ -67,11 +67,11 @@
     <Compile Include="Forms\PantallaBajaVehiculo.Designer.cs">
       <DependentUpon>PantallaBajaVehiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PantallaConsultarMultas.cs">
+    <Compile Include="Forms\PantallaConsultarMulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PantallaConsultarMultas.Designer.cs">
-      <DependentUpon>PantallaConsultarMultas.cs</DependentUpon>
+    <Compile Include="Forms\PantallaConsultarMulta.Designer.cs">
+      <DependentUpon>PantallaConsultarMulta.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PantallaConsultarPuntos.cs">
       <SubType>Form</SubType>
@@ -116,8 +116,8 @@
     <EmbeddedResource Include="Forms\PantallaBajaVehiculo.resx">
       <DependentUpon>PantallaBajaVehiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PantallaConsultarMultas.resx">
-      <DependentUpon>PantallaConsultarMultas.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\PantallaConsultarMulta.resx">
+      <DependentUpon>PantallaConsultarMulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PantallaConsultarPuntos.resx">
       <DependentUpon>PantallaConsultarPuntos.cs</DependentUpon>
