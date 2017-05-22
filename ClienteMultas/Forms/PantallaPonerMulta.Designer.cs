@@ -72,9 +72,19 @@
             0,
             0,
             0});
+            this.spPuntos.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.spPuntos.Name = "spPuntos";
             this.spPuntos.Size = new System.Drawing.Size(36, 20);
             this.spPuntos.TabIndex = 3;
+            this.spPuntos.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // btMultar
             // 

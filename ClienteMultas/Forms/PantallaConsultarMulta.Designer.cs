@@ -103,11 +103,12 @@
             // 
             // tbMulta
             // 
-            this.tbMulta.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMulta.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMulta.Location = new System.Drawing.Point(29, 144);
             this.tbMulta.Multiline = true;
             this.tbMulta.Name = "tbMulta";
             this.tbMulta.ReadOnly = true;
+            this.tbMulta.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbMulta.Size = new System.Drawing.Size(474, 302);
             this.tbMulta.TabIndex = 7;
             // 
